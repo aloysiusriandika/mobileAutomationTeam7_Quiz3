@@ -18,7 +18,7 @@ Input Username
     Input Text        locator=${username_input}       text=${VALID_USERNAME}
 
 Input Password
-     Input Text        locator=${password_input}      text=${VALID_PASSWORD}
+    Input Text        locator=${password_input}      text=${VALID_PASSWORD}
 
 Click Sign In Button
     Click Element        locator=${click_button}

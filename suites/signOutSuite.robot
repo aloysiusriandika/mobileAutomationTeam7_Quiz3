@@ -16,4 +16,3 @@ User Should Be Able To Login and Logout Successfully
     Click Sign In Button
     Wait Until Element Is Visible    ${home_image}    timeout=10s
     Click Logout Button
-
