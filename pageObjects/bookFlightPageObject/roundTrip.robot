@@ -38,18 +38,58 @@ Select Round Trip
     Wait Until Element Is Visible      ${roundTrip_button_bookFlightPage}
     Click Element                      ${roundTrip_button_bookFlightPage}
 
-Click From City Button
+Verify From City Dropdown Appears
     Wait Until Element Is Visible      ${fromCity_text}
     Click Element                      ${fromCity_button}
-
-Verify From City Dropdown Appears
     Wait Until Element Is Visible      ${fromCity_dropdown1}
-    Click Element                      ${fromCity_dropdown1}
     Text Should Be Visible    New York
-    Wait Until Element Is Visible      ${fromCity_dropdown1}
-    Click Element                      ${fromCity_dropdown1}
+    Wait Until Element Is Visible      ${fromCity_dropdown2}
     Text Should Be Visible    Chicago
+    Wait Until Element Is Visible      ${fromCity_dropdown3}
     Text Should Be Visible    Toronto
+    Click Element                      ${fromCity_dropdown1}
+Verify To City Dropdown Appears
+    Click Element                      ${toCity_button}
+    Wait Until Element Is Visible      ${toCity_dropdown1}
+    Text Should Be Visible    London
+    Wait Until Element Is Visible      ${toCity_dropdown2}
+    Text Should Be Visible    Paris
+    Wait Until Element Is Visible      ${toCity_dropdown3}
+    Text Should Be Visible    Ottawa
+    Click Element                      ${toCity_dropdown2}
+Verify Class Dropdown Appears
+    Click Element                      ${class_button}
+    Wait Until Element Is Visible      ${class_dropdown1}
+    Text Should Be Visible    Economy
+    Wait Until Element Is Visible      ${class_dropdown2}
+    Text Should Be Visible    First
+    Wait Until Element Is Visible      ${class_dropdown3}
+    Text Should Be Visible    Business
+    Click Element                      ${class_dropdown3}
+Verify Start Date & End Date Appears
+    Wait Until Element Is Visible      ${startDate_text}
+    Click Element                      ${startDate_text}
+    Wait Until Element Is Visible      ${tahun_text}
+    Wait Until Element Is Visible      ${hariTanggal_text}
+    Wait Until Element Is Visible      ${dateChoice}
+    Click Element                      ${previousMonth_button}
+    Click Element                      ${nextMonth_button}
+    Click Element                      ${OK_button}
+    Click Element                      ${endDate_text}
+    Wait Until Element Is Visible      ${tahun_text}
+    Wait Until Element Is Visible      ${hariTanggal_text}
+    Wait Until Element Is Visible      ${dateChoice}
+    Click Element                      ${previousMonth_button}
+    Click Element                      ${nextMonth_button}
+    Click Element                      ${OK_button}
+Verify Radio Button
+    Wait Until Element Is Visible        ${radioButton_flight}
+    Click Element                        ${radioButton_flight}
+    Wait Until Element Is Visible        ${radioButton_hotel}
+    Click Element                        ${radioButton_hotel}
+Verify Checkbox
+    Wait Until Element Is Visible        ${checkBox_day}
+    Click Element                        ${checkBox_day}
 Verify User Can Login
     [Arguments]    ${email}=${VALID_EMAIL}    ${password}=${VALID_PASSWORD}
     Click Sign In Button On Home Page

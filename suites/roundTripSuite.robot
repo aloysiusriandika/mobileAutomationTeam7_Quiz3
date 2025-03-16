@@ -10,8 +10,18 @@ ${VALID_PASSWORD}            abc123
 *** Test Cases ***
 Verify User Is Logged In
     Verify Username Appears
-Verify From City Can Be Selected
+Dropdowns Appears
     Select Book Flight
     Select Round Trip
-    Click From City Button
     Verify From City Dropdown Appears
+    Verify To City Dropdown Appears
+    Verify Class Dropdown Appears
+Start Date & End Date Appears
+    Select Book Flight
+    Select Round Trip
+    Verify Start Date & End Date Appears
+Checkbox & Radio Button Appears
+    Select Book Flight
+    Select Round Trip
+    Verify Radio Button
+    Verify Checkbox
