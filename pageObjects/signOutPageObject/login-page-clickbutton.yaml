@@ -1,0 +1,1 @@
+click_button: '//android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]'

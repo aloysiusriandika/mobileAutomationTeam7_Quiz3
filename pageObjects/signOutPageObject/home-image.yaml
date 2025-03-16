@@ -1,0 +1,1 @@
+home_image: '//android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView"]'
